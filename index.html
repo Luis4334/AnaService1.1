@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ana Services Clean</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img id="logo" src="img/logo.png" style="max-width: 65px;height: auto;"></a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contactanos </a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+  <section class="home">
+    <section id="container-slider">
+      <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i
+          class="fas fa-chevron-circle-left"></i></a>
+      <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i
+          class="fas fa-chevron-circle-right"></i></a>
+      <ul class="listslider">
+        <li><a itlist="itList_0" href="#" border: none !important;></a></li>
+        <li><a itlist="itList_1" href="#"></a></li>
+        <li><a itlist="itList_2" href="#"></a></li>
+      </ul>
+      <ul id="slider">
+        <li style="background-image: url('img/3.jpg'); z-index:0; opacity: 1;">
+          <div class="content_slider">
+            <div>
+              <h2>Necesitas una limpieza para tu hogar?</h2>
+              <a href="https://api.whatsapp.com/send/?phone=584248926510&text&type=phone_number&app_absent=0"
+                target="_blank" class="btnSlider">Acceder</a>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url('img/2.jpg'); ">
+          <div class="content_slider">
+            <div>
+
+              <a href="https://www.instagram.com/biocenter.laboratorios/" target="_blank" class="btnSlider">Acceder</a>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url('img/1.jpg'); ">
+          <div class="content_slider">
+            <div>
+              <h2>Deja que nuestros expertos en limpieza se encarguen de hacer brillar tu hogar u oficina</h2>
+              <a href="https://goo.gl/maps/oxfzJGiTUL7b3RcJ6" target="_blank" class="btnSlider">Acceder</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </section>
+  <section class="contenedor-testimonios">
+
+    <article class="imagen-circular">
+      <img src="img/familia.jpg" alt="Imagen">
+      <div class="texto">
+        <p>¡Recomendaría este servicio a cualquiera que busque una limpieza de calidad y confiable en su hogar!</p>
+      </div>
+    </article>
+    <article class="imagen-circular">
+      <img src="img/test.png" alt="Imagen">
+      <div class="texto">
+        <p> Estoy encantado con el servicio de limpieza a casa que he recibido. El equipo fue puntual, profesional y realizó un trabajo impecable.</p>
+      </div>
+    </article>
+    <article class="imagen-circular">
+      <img src="img/123.jpg" alt="Imagen">
+      <div class="texto">
+        <p>Mi hogar quedó reluciente y fresco, y el personal fue amable y respetuoso en todo momento.</p>
+      </div>
+    </article>
+
+  </section>
+
+
+<section class="textoimg-general">
+    <article class="textoimg">
+      <img src="img/4.jpg"alt="">
+      <div class="text-box">
+        <h2>RAÍCES HEDONISTAS</h2>
+        <p>El paso clásico “Lorem ipsum dolor sit amet…” se atribuye a una remixación del texto de De Finibus Bonorum et Malorum (“En los extremos del bien y del mal”),
+
+        </p>
+      </div>
+    </article>
+    
+    <article class="textoimg1">
+      <div class="text-box">
+        <h2>RAÍCES HEDONISTAS</h2>
+        <p>El paso clásico “Lorem ipsum dolor sit amet…” se atribuye a una remixación del texto de De Finibus Bonorum et Malorum (“En los extremos del bien y del mal”)
+
+        </p>
+      </div>
+      <img  src="img/5.jpg"alt="">
+    </article>
+    <article class="textoimg">
+      <img src="img/2.jpg"alt="">
+      <div class="text-box">
+        <h2>RAÍCES HEDONISTAS</h2>
+        <p>El paso clásico “Lorem ipsum dolor sit amet…” se atribuye a una remixación del texto de De Finibus Bonorum et Malorum (“En los extremos del bien y del mal”),
+
+        </p>
+      </div>
+    </article>
+  </section >
+  <footer>
+    <div class="contenedor-footer">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="enlaces">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="redes-sociales">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="derechos">
+      <p>Todos los derechos reservados &copy; 2023</p>
+    </div>
+  </footer>
+
+  <!-- Jquery needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+  <script>
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 50) {
+        $('.nav').addClass('affix');
+        console.log("OK");
+      } else {
+        $('.nav').removeClass('affix');
+      }
+    });
+  </script>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
